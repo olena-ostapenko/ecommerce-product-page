@@ -1,0 +1,86 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-main_photo{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.view--product-mini-slider .swiper-slide:hover img{
+    opacity: 0.5;
+}
+
+.view--product-main-slider {
+  height: 550px;
+  width: 550px;
+  border-radius: 15px;
+}
+
+.view--product-mini-slider {
+  height: 88px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.view--product-mini-slider .swiper-slide {
+  width: 25%;
+  height: 100%;
+ opacity: 1;
+  box-sizing: border-box;
+
+}
+
+.view--product-mini-slider .swiper-slide-thumb-active {
+    border: 2px solid rgba(255, 126, 27, 1);
+  opacity: 1;
+  background-color: #fff;
+}
+.view--product-mini-slider .swiper-slide-thumb-active  img{ 
+  opacity: 0.25;
+
+}
+
+.swiper-button-my {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    width: 56px;
+    height: 56px;
+} 
+.swiper-button-prev-my{
+    background-image: url(./image/btn_nav_icon.svg);
+    left: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.swiper-button-prev-my:hover{
+    background-image: url(./image/btn_active_icon.svg);
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+.swiper-button-next-my{
+    background-image: url(./image/btn_nav_icon.svg);
+    right: 0;
+    transform: translate(50%, -50%) rotate(180deg);
+    cursor: pointer;
+}
+.swiper-button-next-my:hover{
+    background-image: url(./image/btn_active_icon.svg);
+    transform: translate(50%, -50%);
+} 

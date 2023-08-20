@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop sneakers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style_slider.css">
+    <link rel="stylesheet" href="./style_slider--view.css">
+    <link rel="stylesheet" href="./adaptive_375.css">
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header-conteiner">
+          <div class="burger-menu">
+            <a href="#">
+              <img src="./image/burger-menu_icon.svg" alt="">
+            </a>
+
+          </div>
+            <div class="header-logo">
+                <a href="#" class="logo_image"></a>
+            </div>
+            <div class="header-navigation-adaptive-bg hidden"></div>
+            <div class="header-navigation burger-adaptive ">
+              <div class="burger__btn-close">
+
+              </div>
+                <div class="header-navigation-element">
+                    <a href="#">Collections</a>
+
+                </div>
+                <div class="header-navigation-element">
+                    <a href="#">Men</a>
+
+                </div>
+                <div class="header-navigation-element">
+                    <a href="#">Women</a>
+
+                </div>
+                <div class="header-navigation-element">
+                    <a href="#">About</a>
+
+                </div>
+                <div class="header-navigation-element">
+                    <a href="#">Contact</a>
+
+                </div>
+            </div>
+           
+        </div>
+        <div class="header-conteiner_basket">
+            <div class="header-conteiner_basket__person">
+                <a href="#" class="basket">
+                    <span class="basket-value hidden">5</span>
+                </a>
+                <a href="#" class="header-photo_person">
+                    
+                </a>
+            </div>
+        </div>
+<div class="modal hidden">
+    <article>Card</article>
+    <div class="cart-empty cart">
+        <h3>Your cart is empty.</h3>
+    </div>
+    <div class="cart-filled cart ">
+        <section class="filling">
+            <figure>
+            </figure>
+            <div class="card-filling-text">
+                <p>Fall Limited Edition Sneakers</p>
+                <div class="filling-text">
+                    <span class="card-price" value="125">$125<span class="card-quantity" value="">x3</span></span>
+                
+                    <span class="card-sum" value="">$375.00</span>
+                </div>
+            </div>
+            <a href="#"><button class="delite"></button></a>
+
+        </section>
+        <a href="#">
+            <button class="checkout">Checkout
+        </button></a>
+
+    </div>
+
+</div>
+    </header>
+    
+    <main>
+     <section class="main-section">
+        <div class="container">
+          <div class="swiper-button-my swiper-button-prev-my adap"></div>
+          <div class="swiper-button-my swiper-button-next-my adap"></div>
+                    
+            <section class="main-section_left">
+                <div class="main-slider-container">
+                  
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper product-main-slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./image/sneckers_first_image.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./image/sneckers_second_image.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./image/sneckers_third_image.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./image/sneckers_fourth_image.png" />
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  <div thumbsSlider="" class="swiper product-mini-slider">
+                    <div class="swiper-wrapper adap-mini">
+                      <div class="swiper-slide">
+                        <img src="./image/sneckers_first_image.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/sneckers_second_image.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/sneckers_third_image.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/sneckers_fourth_image.png" />
+                      </div>
+                     
+                    </div>
+                  </div>
+               
+    
+            </section>
+        </div>
+        <section class="main-section_right">
+            <div class="text-box">
+                <h4>SNEKERS COMPANY</h4>
+                <h2>Fall Limited Edition Sneakers</h2>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            </div>
+            <div class="price-box">
+                <div class="prise-discount">
+                    <span class="price" value="125">$125</span>
+                    <span class="discount">50%</span>
+                </div>
+                <span class="last-prise">$250</span>
+            </div>
+            <div class="form-conteiner">
+                <form action="" id="form">
+                    <div class="form-conteiner_row">
+                        <div class="quantity">
+                            <button class="border-left">
+                            </button>
+                            <input type="number" class="number-quntity" value="0" min = "0" max="99">
+        
+                            <button class="border-right">
+                                +
+                            </button>
+                        </div>
+                        <input type="submit" id="submit" value="" placeholder="" >
+                    </div>
+                    
+
+                </form>
+
+            </div>
+
+        </section>
+     </section>
+
+
+    </main>
+    <div class="modal-main_photo hidden" >
+      
+        <div class="container">
+          <a class="modal-clouse">
+          </a>
+            <div class="main-slider-container">
+              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper view--product-main-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./image/sneckers_first_image.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./image/sneckers_second_image.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./image/sneckers_third_image.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./image/sneckers_fourth_image.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-my swiper-button-next-my"></div>
+              <div class="swiper-button-my swiper-button-prev-my"></div>
+            </div>
+            
+          
+            <div thumbsSlider="" class="swiper view--product-mini-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/sneckers_first_image.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/sneckers_second_image.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/sneckers_third_image.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/sneckers_fourth_image.png" />
+                </div>
+               
+              </div>
+            </div>
+          
+          </div>
+
+    </div>
+<script src="./ya.js"></script>
+<script src="./ya_slider.js"></script>
+<script src="./ya_slider--view.js"></script>
+<script src="./ya_adaptive.js"></script>
+
+
+
+</body>
+
+</html>
